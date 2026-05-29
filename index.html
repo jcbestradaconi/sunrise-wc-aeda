@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup 2026 — Live at AEDA · San Nicolas, Aruba</title>
+<meta name="description" content="Watch the 2026 World Cup live at the AEDA Building in San Nicolas, Aruba. Free admission, food & beverage inside. Cheer for the Netherlands, Brazil, Curaçao and Haiti. Reserve free tickets on Eventbrite.">
+<meta property="og:title" content="World Cup 2026 — Live at AEDA · San Nicolas, Aruba">
+<meta property="og:description" content="Free watch parties at the AEDA Building. Netherlands · Brazil · Curaçao · Haiti. Free tickets, F&B inside.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/posters/jun13.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --turq:#06b6d4; --turq-dk:#0e7490; --ocean:#0a2540;
+    --coral:#ff6b35; --sunset:#ff4d8d; --gold:#ffcf2d;
+    --cream:#fff8f0; --ink:#10243a; --muted:#5a6b7b;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.02;text-transform:uppercase}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:1.02rem;padding:15px 30px;border-radius:50px;border:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;letter-spacing:.3px}
+  .btn-primary{background:linear-gradient(135deg,var(--coral),var(--sunset));color:#fff;box-shadow:0 10px 26px rgba(255,77,141,.38)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,77,141,.5)}
+  .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:2px solid rgba(255,255,255,.6);backdrop-filter:blur(4px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.24)}
+
+  /* ===== NAV ===== */
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,37,64,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:'Anton';font-size:1.15rem;letter-spacing:.5px}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,207,45,.25)}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{color:#cfe3ee;font-weight:600;font-size:.95rem}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{background:var(--gold);color:var(--ocean);padding:9px 20px;border-radius:50px;font-weight:800}
+  .nav-cta:hover{color:var(--ocean)}
+  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:74px 0 90px;
+    background:linear-gradient(160deg,#0a2540 0%,#0e7490 38%,#ff6b35 82%,#ff4d8d 100%)}
+  .hero::before{content:"";position:absolute;inset:0;opacity:.5;
+    background:radial-gradient(circle at 80% 12%,rgba(255,207,45,.55),transparent 42%),
+               radial-gradient(circle at 12% 80%,rgba(6,182,212,.5),transparent 45%)}
+  .hero .wrap{position:relative;z-index:2}
+  .kicker{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:8px 18px;border-radius:50px;font-weight:700;font-size:.82rem;letter-spacing:1.5px;text-transform:uppercase}
+  .hero h1{font-size:clamp(2.9rem,8vw,6rem);margin:22px 0 4px;text-shadow:0 4px 30px rgba(0,0,0,.25)}
+  .hero h1 .yellow{color:var(--gold)}
+  .hero .sub{font-size:clamp(1.05rem,2.4vw,1.4rem);font-weight:600;max-width:620px;margin:0 auto 8px;color:#eaf6fb}
+  .hero .loc{font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.9rem;color:var(--gold);margin-bottom:30px}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .badge{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:11px 18px;border-radius:14px;font-weight:700;font-size:.92rem}
+  .badge svg{width:20px;height:20px;flex:none}
+  .teams-strip{margin-top:40px;display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
+  .teams-strip .lbl{font-weight:700;letter-spacing:1.5px;font-size:.78rem;text-transform:uppercase;color:#eaf6fb;opacity:.85}
+  .teams-strip img{width:42px;height:30px;border-radius:4px;box-shadow:0 3px 10px rgba(0,0,0,.3);object-fit:cover}
+  .team-flag{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .team-flag span{font-size:.72rem;font-weight:700;letter-spacing:.5px}
+
+  /* ===== SECTION SHELL ===== */
+  section{padding:72px 0}
+  .sec-head{text-align:center;max-width:660px;margin:0 auto 48px}
+  .sec-head .eyebrow{color:var(--coral);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.82rem}
+  .sec-head h2{font-size:clamp(2rem,5vw,3.2rem);margin:10px 0 12px;color:var(--ocean)}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+
+  /* ===== EVENTS ===== */
+  #events{background:linear-gradient(180deg,#fff8f0, #f1f9fc)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(10,37,64,.10);display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;border:1px solid rgba(10,37,64,.05)}
+  .card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(10,37,64,.18)}
+  .poster-link{position:relative;display:block;background:var(--ocean);aspect-ratio:2/3;overflow:hidden}
+  .poster-link img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  .card:hover .poster-link img{transform:scale(1.04)}
+  .poster-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s ease;background:rgba(10,37,64,.55)}
+  .poster-link:hover .poster-overlay{opacity:1}
+  .poster-overlay span{background:var(--gold);color:var(--ocean);font-weight:800;padding:11px 22px;border-radius:50px;font-size:.92rem}
+  .card-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+  .date-row{display:flex;align-items:baseline;gap:9px;margin-bottom:4px}
+  .date-row .dow{font-family:'Anton';font-size:1.5rem;color:var(--coral)}
+  .date-row .full{font-weight:700;color:var(--ocean);font-size:1rem}
+  .tag{align-self:flex-start;font-size:.7rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:4px 11px;border-radius:50px;margin-bottom:14px}
+  .tag.double{background:#fff0e6;color:var(--coral)}
+  .tag.single{background:#e6f7fb;color:var(--turq-dk)}
+  .matches{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;flex:1}
+  .match{display:flex;align-items:center;gap:9px;font-weight:600;font-size:.92rem}
+  .match .vs-teams{display:flex;align-items:center;gap:7px;flex:1}
+  .match img{width:26px;height:18px;border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.18);object-fit:cover;flex:none}
+  .match .vs{color:var(--muted);font-weight:800;font-size:.78rem}
+  .match .time{color:var(--turq-dk);font-weight:800;font-size:.82rem;white-space:nowrap}
+  .card .btn-primary{justify-content:center;width:100%;padding:13px;font-size:.95rem}
+
+  /* ===== VENUE ===== */
+  #venue{background:var(--ocean);color:#fff}
+  .venue-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:46px;align-items:center}
+  @media(max-width:860px){.venue-grid{grid-template-columns:1fr;gap:30px}}
+  #venue .eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.82rem}
+  #venue h2{font-size:clamp(2rem,5vw,3rem);margin:10px 0 16px}
+  #venue p{color:#cfe3ee;margin-bottom:16px;font-size:1.05rem}
+  .venue-facts{list-style:none;display:flex;flex-direction:column;gap:14px;margin:22px 0 26px}
+  .venue-facts li{display:flex;gap:13px;align-items:flex-start;font-weight:600}
+  .venue-facts svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:2px}
+  .venue-facts small{display:block;color:#9fbccf;font-weight:500}
+  .map-card{border-radius:20px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.4);border:3px solid rgba(255,255,255,.12)}
+  .map-card iframe{display:block;width:100%;height:340px;border:0}
+
+  /* ===== FOOTER ===== */
+  footer{background:#061826;color:#9fbccf;text-align:center;padding:46px 22px}
+  footer .flogo{font-family:'Anton';color:#fff;font-size:1.4rem;letter-spacing:.5px;margin-bottom:8px}
+  footer .ftags{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:14px 0 20px}
+  footer .ftags a{color:#cfe3ee;font-weight:600}
+  footer .ftags a:hover{color:var(--gold)}
+  footer .fine{font-size:.82rem;color:#5d7791;margin-top:8px;line-height:1.7}
+  .cta-band{background:linear-gradient(135deg,var(--coral),var(--sunset));text-align:center;padding:56px 22px;color:#fff}
+  .cta-band h2{font-size:clamp(1.8rem,5vw,3rem);margin-bottom:10px}
+  .cta-band p{font-weight:600;margin-bottom:26px;font-size:1.1rem;opacity:.95}
+  .cta-band .btn{background:#fff;color:var(--sunset)}
+  .cta-band .btn:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot"></span>AEDA · WORLD CUP LIVE</a>
+    <div class="nav-links">
+      <a href="#events">Schedule</a>
+      <a href="#venue">Venue</a>
+      <a class="nav-cta" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Free Tickets</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">★ AEDA Foundation Presents ★</span>
+    <h1>World Cup <span class="yellow">2026</span><br>Live at AEDA</h1>
+    <p class="sub">Six big match days. Four teams to cheer. One unforgettable summer in the heart of San Nicolas.</p>
+    <p class="loc">San Nicolas · Aruba</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Free Tickets →</a>
+      <a class="btn btn-ghost" href="#events">View Schedule</a>
+    </div>
+    <div class="badges">
+      <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>100% Free Admission</div>
+      <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4M8 11v6m4-6v6m4-6v6"/></svg>Food &amp; Beverage Inside</div>
+      <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bernard van de Veen Zeppenfeldstraat 35</div>
+    </div>
+    <div class="teams-strip">
+      <span class="lbl">Cheering for:</span>
+      <div class="team-flag"><img src="assets/flags/netherlands.svg" alt="Netherlands flag"><span>Netherlands</span></div>
+      <div class="team-flag"><img src="assets/flags/brazil.svg" alt="Brazil flag"><span>Brazil</span></div>
+      <div class="team-flag"><img src="assets/flags/curacao.svg" alt="Curaçao flag"><span>Curaçao</span></div>
+      <div class="team-flag"><img src="assets/flags/haiti.svg" alt="Haiti flag"><span>Haiti</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Schedule</span>
+      <h2>Six Match Days at AEDA</h2>
+      <p>Every day one of our four teams plays is a watch party at the AEDA Building. Tap any poster to reserve your free tickets. All times shown are Aruba local time (AST).</p>
+    </div>
+    <div class="grid">
+
+      <!-- JUN 13 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun13.png" alt="June 13 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">SAT</span><span class="full">June 13, 2026</span></div>
+          <span class="tag double">Double-Header</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Morocco <img src="assets/flags/morocco.svg" alt="Morocco"></span><span class="time">6:00 PM</span></div>
+            <div class="match"><span class="vs-teams"><img src="assets/flags/haiti.svg" alt="Haiti"> Haiti <span class="vs">vs</span> Scotland <img src="assets/flags/scotland.svg" alt="Scotland"></span><span class="time">9:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+      <!-- JUN 14 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun14.png" alt="June 14 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">SUN</span><span class="full">June 14, 2026</span></div>
+          <span class="tag double">Double-Header</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Germany <img src="assets/flags/germany.svg" alt="Germany"></span><span class="time">1:00 PM</span></div>
+            <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Japan <img src="assets/flags/japan.svg" alt="Japan"></span><span class="time">3:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+      <!-- JUN 19 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun19.png" alt="June 19 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">FRI</span><span class="full">June 19, 2026</span></div>
+          <span class="tag single">Match Day</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Haiti <img src="assets/flags/haiti.svg" alt="Haiti"></span><span class="time">9:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+      <!-- JUN 20 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun20.png" alt="June 20 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">SAT</span><span class="full">June 20, 2026</span></div>
+          <span class="tag double">Double-Header</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Sweden <img src="assets/flags/sweden.svg" alt="Sweden"></span><span class="time">2:00 PM</span></div>
+            <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Ecuador <img src="assets/flags/ecuador.svg" alt="Ecuador"></span><span class="time">8:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+      <!-- JUN 24 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun24.png" alt="June 24 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">WED</span><span class="full">June 24, 2026</span></div>
+          <span class="tag double">Double-Header</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Scotland <img src="assets/flags/scotland.svg" alt="Scotland"></span><span class="time">6:00 PM</span></div>
+            <div class="match"><span class="vs-teams"><img src="assets/flags/haiti.svg" alt="Haiti"> Haiti <span class="vs">vs</span> Morocco <img src="assets/flags/morocco.svg" alt="Morocco"></span><span class="time">6:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+      <!-- JUN 25 -->
+      <article class="card">
+        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
+          <img src="assets/posters/jun25.png" alt="June 25 World Cup watch party poster">
+          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+        </a>
+        <div class="card-body">
+          <div class="date-row"><span class="dow">THU</span><span class="full">June 25, 2026</span></div>
+          <span class="tag double">Double-Header</span>
+          <div class="matches">
+            <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Ivory Coast <img src="assets/flags/ivory-coast.svg" alt="Ivory Coast"></span><span class="time">4:00 PM</span></div>
+            <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Tunisia <img src="assets/flags/tunisia.svg" alt="Tunisia"></span><span class="time">7:00 PM</span></div>
+          </div>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue">
+  <div class="wrap">
+    <div class="venue-grid">
+      <div>
+        <span class="eyebrow">The Venue</span>
+        <h2>The AEDA Building</h2>
+        <p>Right in the heart of San Nicolas — Aruba's vibrant cultural capital. Big screens, great atmosphere, and the whole community coming together for every match.</p>
+        <ul class="venue-facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>AEDA Building<small>Bernard van de Veen Zeppenfeldstraat 35, San Nicolas, Aruba</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Doors open before every match<small>Arrive early to grab your spot</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4M8 11v6m4-6v6m4-6v6"/></svg><span>Food &amp; beverage available inside<small>Full concessions on-site</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Free admission, always<small>Reserve your spot on Eventbrite</small></span></li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets →</a>
+      </div>
+      <div class="map-card">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AEDA Building location"
+          src="https://www.google.com/maps?q=Bernard%20van%20de%20Veen%20Zeppenfeldstraat%2035%2C%20San%20Nicolas%2C%20Aruba&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Don't Watch Alone — Watch at AEDA</h2>
+    <p>Free tickets go fast. Reserve yours now and bring the whole crew.</p>
+    <a class="btn" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Your Free Tickets →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="flogo">AEDA FOUNDATION</div>
+  <p>World Cup 2026 Watch Parties · San Nicolas, Aruba</p>
+  <div class="ftags">
+    <a href="#events">Schedule</a>
+    <a href="#venue">Venue</a>
+    <a href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Free Tickets</a>
+  </div>
+  <p class="fine">Presented by the AEDA Foundation. Free admission · Food &amp; beverage available inside.<br>Tickets distributed via Eventbrite. Match dates and times subject to change.</p>
+</footer>
+
+</body>
+</html>
