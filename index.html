@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Cup 2026 — Live at AEDA · San Nicolas, Aruba</title>
-<meta name="description" content="Watch the 2026 World Cup live at the AEDA Building in San Nicolas, Aruba. Free admission, food & beverage inside. Cheer for the Netherlands, Brazil, Curaçao and Haiti. Reserve free tickets on Eventbrite.">
+<meta name="description" content="Watch the 2026 World Cup live at the AEDA Building in San Nicolas, Aruba. Free admission, food & beverage inside. Featuring the Netherlands, Brazil, Curaçao and Haiti. Reserve limited free tickets on Eventbrite.">
 <meta property="og:title" content="World Cup 2026 — Live at AEDA · San Nicolas, Aruba">
-<meta property="og:description" content="Free watch parties at the AEDA Building. Netherlands · Brazil · Curaçao · Haiti. Free tickets, F&B inside.">
+<meta property="og:description" content="Free watch parties at the AEDA Building. Netherlands · Brazil · Curaçao · Haiti. Limited free tickets, F&B inside.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/posters/jun13.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -101,6 +101,21 @@
   .match .time{color:var(--turq-dk);font-weight:800;font-size:.82rem;white-space:nowrap}
   .card .btn-primary{justify-content:center;width:100%;padding:13px;font-size:.95rem}
 
+  /* ===== CALENDAR ===== */
+  #calendar{background:#fff}
+  .cal-wrap{max-width:780px;margin:0 auto}
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .cal .dow-h{text-align:center;font-weight:800;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);padding-bottom:4px}
+  .cal .cell{aspect-ratio:1/1;border-radius:12px;background:#f1f9fc;display:flex;align-items:flex-start;justify-content:flex-end;padding:8px;font-weight:700;color:var(--ocean);font-size:.95rem;border:1px solid rgba(10,37,64,.05)}
+  .cal .cell.empty{background:transparent;border:none}
+  .cal a.game{aspect-ratio:1/1;border-radius:12px;padding:8px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(150deg,var(--turq),var(--coral));color:#fff;text-decoration:none;box-shadow:0 6px 16px rgba(255,107,53,.30);transition:transform .15s ease,box-shadow .15s ease}
+  .cal a.game:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(255,107,53,.48)}
+  .cal a.game .num{align-self:flex-end;font-family:'Anton';font-size:1.25rem;line-height:1}
+  .cal a.game .gtag{font-size:.58rem;font-weight:800;letter-spacing:.4px;text-transform:uppercase;background:rgba(255,255,255,.24);border-radius:20px;padding:2px 7px;align-self:flex-start}
+  .cal-legend{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;color:var(--muted);font-weight:600;font-size:.92rem}
+  .cal-legend .swatch{width:18px;height:18px;border-radius:5px;background:linear-gradient(150deg,var(--turq),var(--coral))}
+  @media(max-width:560px){.cal{gap:5px}.cal .cell{padding:5px;font-size:.78rem;border-radius:9px}.cal a.game{padding:5px;border-radius:9px}.cal a.game .num{font-size:1rem}.cal a.game .gtag{display:none}}
+
   /* ===== VENUE ===== */
   #venue{background:var(--ocean);color:#fff}
   .venue-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:46px;align-items:center}
@@ -137,8 +152,9 @@
     <a class="brand" href="#top"><span class="dot"></span>AEDA · WORLD CUP LIVE</a>
     <div class="nav-links">
       <a href="#events">Schedule</a>
+      <a href="#calendar">Calendar</a>
       <a href="#venue">Venue</a>
-      <a class="nav-cta" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Free Tickets</a>
+      <a class="nav-cta" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Limited Free Tickets</a>
     </div>
   </div>
 </nav>
@@ -148,10 +164,10 @@
   <div class="wrap">
     <span class="kicker">★ AEDA Foundation Presents ★</span>
     <h1>World Cup <span class="yellow">2026</span><br>Live at AEDA</h1>
-    <p class="sub">Six big match days. Four teams to cheer. One unforgettable summer in the heart of San Nicolas.</p>
+    <p class="sub">6 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.</p>
     <p class="loc">San Nicolas · Aruba</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Free Tickets →</a>
+      <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Limited Free Tickets →</a>
       <a class="btn btn-ghost" href="#events">View Schedule</a>
     </div>
     <div class="badges">
@@ -160,7 +176,7 @@
       <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bernard van de Veen Zeppenfeldstraat 35</div>
     </div>
     <div class="teams-strip">
-      <span class="lbl">Cheering for:</span>
+      <span class="lbl">Featured teams:</span>
       <div class="team-flag"><img src="assets/flags/netherlands.svg" alt="Netherlands flag"><span>Netherlands</span></div>
       <div class="team-flag"><img src="assets/flags/brazil.svg" alt="Brazil flag"><span>Brazil</span></div>
       <div class="team-flag"><img src="assets/flags/curacao.svg" alt="Curaçao flag"><span>Curaçao</span></div>
@@ -174,8 +190,8 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">The Schedule</span>
-      <h2>Six Match Days at AEDA</h2>
-      <p>Every day one of our four teams plays is a watch party at the AEDA Building. Tap any poster to reserve your free tickets. All times shown are Aruba local time (AST).</p>
+      <h2>6 Game Days — First Round</h2>
+      <p>These are the first-round game days at the AEDA Building. Tap any poster to reserve your limited free tickets. Check back as we add new dates for the rounds ahead. All times shown are Aruba local time (AST).</p>
     </div>
     <div class="grid">
 
@@ -183,7 +199,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun13.png" alt="June 13 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">SAT</span><span class="full">June 13, 2026</span></div>
@@ -192,7 +208,7 @@
             <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Morocco <img src="assets/flags/morocco.svg" alt="Morocco"></span><span class="time">6:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/haiti.svg" alt="Haiti"> Haiti <span class="vs">vs</span> Scotland <img src="assets/flags/scotland.svg" alt="Scotland"></span><span class="time">9:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
@@ -200,7 +216,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun14.png" alt="June 14 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">SUN</span><span class="full">June 14, 2026</span></div>
@@ -209,7 +225,7 @@
             <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Germany <img src="assets/flags/germany.svg" alt="Germany"></span><span class="time">1:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Japan <img src="assets/flags/japan.svg" alt="Japan"></span><span class="time">3:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
@@ -217,7 +233,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun19.png" alt="June 19 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">FRI</span><span class="full">June 19, 2026</span></div>
@@ -225,7 +241,7 @@
           <div class="matches">
             <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Haiti <img src="assets/flags/haiti.svg" alt="Haiti"></span><span class="time">9:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
@@ -233,7 +249,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun20.png" alt="June 20 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">SAT</span><span class="full">June 20, 2026</span></div>
@@ -242,7 +258,7 @@
             <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Sweden <img src="assets/flags/sweden.svg" alt="Sweden"></span><span class="time">2:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Ecuador <img src="assets/flags/ecuador.svg" alt="Ecuador"></span><span class="time">8:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
@@ -250,7 +266,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun24.png" alt="June 24 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">WED</span><span class="full">June 24, 2026</span></div>
@@ -259,7 +275,7 @@
             <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Scotland <img src="assets/flags/scotland.svg" alt="Scotland"></span><span class="time">6:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/haiti.svg" alt="Haiti"> Haiti <span class="vs">vs</span> Morocco <img src="assets/flags/morocco.svg" alt="Morocco"></span><span class="time">6:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
@@ -267,7 +283,7 @@
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
           <img src="assets/posters/jun25.png" alt="June 25 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Free Tickets →</span></div>
+          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">THU</span><span class="full">June 25, 2026</span></div>
@@ -276,10 +292,40 @@
             <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Ivory Coast <img src="assets/flags/ivory-coast.svg" alt="Ivory Coast"></span><span class="time">4:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Tunisia <img src="assets/flags/tunisia.svg" alt="Tunisia"></span><span class="time">7:00 PM</span></div>
           </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
       </article>
 
+    </div>
+  </div>
+</section>
+
+<!-- CALENDAR -->
+<section id="calendar">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Game Day Calendar</span>
+      <h2>June 2026</h2>
+      <p>First-round game days at a glance. Tap a highlighted day to reserve your limited free tickets. More dates will be added here as the next rounds are confirmed.</p>
+    </div>
+    <div class="cal-wrap">
+      <div class="cal">
+        <div class="dow-h">Sun</div><div class="dow-h">Mon</div><div class="dow-h">Tue</div><div class="dow-h">Wed</div><div class="dow-h">Thu</div><div class="dow-h">Fri</div><div class="dow-h">Sat</div>
+        <div class="cell empty"></div>
+        <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div><div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
+        <div class="cell">7</div><div class="cell">8</div><div class="cell">9</div><div class="cell">10</div><div class="cell">11</div><div class="cell">12</div>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 13 — Brazil vs Morocco 6PM · Haiti vs Scotland 9PM"><span class="num">13</span><span class="gtag">2 games</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sun, Jun 14 — Curaçao vs Germany 1PM · Netherlands vs Japan 3PM"><span class="num">14</span><span class="gtag">2 games</span></a>
+        <div class="cell">15</div><div class="cell">16</div><div class="cell">17</div><div class="cell">18</div>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Fri, Jun 19 — Brazil vs Haiti 9PM"><span class="num">19</span><span class="gtag">1 game</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 20 — Netherlands vs Sweden 2PM · Curaçao vs Ecuador 8PM"><span class="num">20</span><span class="gtag">2 games</span></a>
+        <div class="cell">21</div><div class="cell">22</div><div class="cell">23</div>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Wed, Jun 24 — Brazil vs Scotland 6PM · Haiti vs Morocco 6PM"><span class="num">24</span><span class="gtag">2 games</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Thu, Jun 25 — Curaçao vs Ivory Coast 4PM · Netherlands vs Tunisia 7PM"><span class="num">25</span><span class="gtag">2 games</span></a>
+        <div class="cell">26</div><div class="cell">27</div>
+        <div class="cell">28</div><div class="cell">29</div><div class="cell">30</div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+      </div>
+      <div class="cal-legend"><span class="swatch"></span> Game day — tap to reserve your limited free tickets</div>
     </div>
   </div>
 </section>
@@ -294,11 +340,11 @@
         <p>Right in the heart of San Nicolas — Aruba's vibrant cultural capital. Big screens, great atmosphere, and the whole community coming together for every match.</p>
         <ul class="venue-facts">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>AEDA Building<small>Bernard van de Veen Zeppenfeldstraat 35, San Nicolas, Aruba</small></span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Space is limited<small>Reserve your free tickets and plan to arrive early</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Space is limited<small>Reserve your limited free tickets and plan to arrive early</small></span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4M8 11v6m4-6v6m4-6v6"/></svg><span>Food &amp; beverage available inside<small>Proudly made possible by our local F&amp;B vendors — no outside food or drink, please</small></span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Free admission, always<small>Reserve your spot on Eventbrite</small></span></li>
         </ul>
-        <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Free Tickets →</a>
+        <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets →</a>
       </div>
       <div class="map-card">
         <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AEDA Building location"
@@ -321,7 +367,7 @@
           <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3 style="font-size:1.35rem;color:var(--ocean);margin-bottom:8px">Space Is Limited</h3>
-        <p style="color:var(--muted);font-weight:500">Capacity inside the AEDA Building is limited. Reserve your free tickets in advance and plan to arrive early to make sure you get in.</p>
+        <p style="color:var(--muted);font-weight:500">Capacity inside the AEDA Building is limited. Reserve your limited free tickets in advance and plan to arrive early to make sure you get in.</p>
       </div>
       <div style="background:#fff;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(10,37,64,.10);border:1px solid rgba(10,37,64,.05)">
         <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--turq),var(--turq-dk));display:flex;align-items:center;justify-content:center;margin-bottom:16px">
@@ -338,8 +384,8 @@
 <section class="cta-band">
   <div class="wrap">
     <h2>Don't Watch Alone — Watch at AEDA</h2>
-    <p>Free tickets go fast. Reserve yours now and bring the whole crew.</p>
-    <a class="btn" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Your Free Tickets →</a>
+    <p>Limited free tickets go fast. Reserve yours now and bring the whole crew.</p>
+    <a class="btn" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Your Limited Free Tickets →</a>
   </div>
 </section>
 
@@ -350,9 +396,14 @@
   <div class="ftags">
     <a href="#events">Schedule</a>
     <a href="#venue">Venue</a>
-    <a href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Free Tickets</a>
+    <a href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Limited Free Tickets</a>
   </div>
-  <p class="fine">Presented by the AEDA Foundation. Free admission · Food &amp; beverage available inside, made possible by our local vendors (no outside food or drink).<br>Space is limited — reserve your free tickets and arrive early. Tickets distributed via Eventbrite. Match dates and times subject to change.</p>
+  <p class="fine">Presented by the AEDA Foundation. Free admission · Food &amp; beverage available inside, made possible by our local vendors (no outside food or drink).<br>Space is limited — reserve your limited free tickets and arrive early. Tickets distributed via Eventbrite. Match dates and times subject to change.</p>
+  <div style="display:flex;align-items:center;justify-content:center;gap:9px;margin-top:20px;opacity:.9">
+    <img src="assets/flags/canada.svg" alt="Canada" style="width:28px;height:19px;border-radius:3px;box-shadow:0 1px 5px rgba(0,0,0,.45)">
+    <img src="assets/flags/usa.svg" alt="United States" style="width:28px;height:19px;border-radius:3px;box-shadow:0 1px 5px rgba(0,0,0,.45)">
+    <span style="font-size:.76rem;color:#5d7791;font-weight:600;letter-spacing:.4px">Made possible by partners from Canada &amp; the USA</span>
+  </div>
 </footer>
 
 </body>
