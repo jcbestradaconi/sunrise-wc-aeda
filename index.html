@@ -42,7 +42,11 @@
   .nav-links a:hover{color:#fff}
   .nav-links a.nav-cta{background:var(--gold);color:#0a2540;padding:9px 20px;border-radius:50px;font-weight:900;text-shadow:none}
   .nav-links a.nav-cta:hover{color:#0a2540;background:#ffd84d}
-  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+  .lang-switch{display:flex;gap:4px;align-items:center}
+  .lang-btn{background:transparent;border:1px solid rgba(255,255,255,.28);color:#cfe3ee;font-family:'Archivo',sans-serif;font-weight:800;font-size:.7rem;padding:5px 8px;border-radius:20px;cursor:pointer;letter-spacing:.5px;line-height:1;transition:background .15s,color .15s}
+  .lang-btn:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+  .lang-btn.on{background:var(--gold);color:#0a2540;border-color:var(--gold)}
+  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}.nav-links{gap:10px}.lang-btn{padding:5px 7px;font-size:.66rem}}
 
   /* ===== HERO ===== */
   .hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:74px 0 90px;
@@ -154,6 +158,12 @@
       <a href="#events">Schedule</a>
       <a href="#calendar">Calendar</a>
       <a href="#venue">Venue</a>
+      <span class="lang-switch" aria-label="Language">
+        <button class="lang-btn on" data-l="en" onclick="__setLang('en')">EN</button>
+        <button class="lang-btn" data-l="nl" onclick="__setLang('nl')">NL</button>
+        <button class="lang-btn" data-l="pap" onclick="__setLang('pap')">PAP</button>
+        <button class="lang-btn" data-l="es" onclick="__setLang('es')">ES</button>
+      </span>
       <a class="nav-cta" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Limited Free Tickets</a>
     </div>
   </div>
@@ -164,6 +174,7 @@
   <div class="wrap">
     <span class="kicker">★ AEDA Foundation Presents ★</span>
     <h1>World Cup <span class="yellow">2026</span><br>Live at AEDA</h1>
+    <p style="margin:14px auto 0;max-width:620px;font-size:1rem;font-weight:600;color:#eaf6fb">Proudly supporting <strong style="color:var(--gold)">Sportvereniging Atletico Axon Academy</strong> in San Nicolas — a local youth soccer club.</p>
     <p class="sub">8 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.</p>
     <p class="loc">San Nicolas · Aruba</p>
     <div class="hero-cta">
@@ -420,6 +431,38 @@
   </div>
 </section>
 
+<!-- FOOD & DRINKS -->
+<section id="food" style="background:#fff;padding:72px 0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Inside the Venue</span>
+      <h2>Food &amp; Drinks</h2>
+      <p>Hot food and cold drinks are served inside throughout every event. You can also <strong>pre-purchase food and beer on Eventbrite</strong> when you reserve your tickets — skip the line and get straight to the game.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(2,1fr);max-width:840px;margin:0 auto">
+      <div style="background:#fff8f0;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(10,37,64,.08);border:1px solid rgba(10,37,64,.05)">
+        <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--coral),var(--sunset));display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;color:var(--ocean);margin-bottom:14px">Food</h3>
+        <ul style="list-style:none;color:var(--muted);font-weight:600;line-height:2.1;display:grid;grid-template-columns:1fr 1fr;gap:0 18px">
+          <li>Hot dogs</li><li>Chicken</li><li>Pizza</li><li>Beef</li><li>Rice &amp; spaghetti</li><li>Salad</li>
+        </ul>
+      </div>
+      <div style="background:#f1f9fc;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(10,37,64,.08);border:1px solid rgba(10,37,64,.05)">
+        <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--turq),var(--turq-dk));display:flex;align-items:center;justify-content:center;margin-bottom:16px">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2"><path d="M5 3h14l-1.5 14a2 2 0 01-2 1.8H8.5a2 2 0 01-2-1.8L5 3zM4.5 8h15"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;color:var(--ocean);margin-bottom:14px">Drinks</h3>
+        <ul style="list-style:none;color:var(--muted);font-weight:600;line-height:2.1;display:grid;grid-template-columns:1fr 1fr;gap:0 18px">
+          <li>Beer</li><li>Pop</li><li>Mixed drinks</li><li>Juice</li><li>Slushies</li><li>Water</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:26px;color:var(--coral);font-weight:800;letter-spacing:.3px">Pre-purchase food &amp; beer on Eventbrite when you register.</p>
+  </div>
+</section>
+
 <!-- CTA BAND -->
 <section class="cta-band">
   <div class="wrap">
@@ -446,5 +489,133 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  // key = exact English text node (trimmed); value = {nl, pap, es}
+  var D = {
+    // ---- nav / shared ----
+    "Schedule":{nl:"Wedstrijden",pap:"Partidonan",es:"Partidos"},
+    "Calendar":{nl:"Kalender",pap:"Calendario",es:"Calendario"},
+    "Venue":{nl:"Locatie",pap:"Lugá",es:"Lugar"},
+    "Limited Free Tickets":{nl:"Beperkte Gratis Tickets",pap:"Tickets Gratis Limitá",es:"Boletos Gratis Limitados"},
+    // ---- hero ----
+    "★ AEDA Foundation Presents ★":{nl:"★ AEDA Foundation Presenteert ★",pap:"★ AEDA Foundation ta Presentá ★",es:"★ AEDA Foundation Presenta ★"},
+    "World Cup":{nl:"WK",pap:"Mundial",es:"Copa Mundial"},
+    "Live at AEDA":{nl:"Live bij AEDA",pap:"Live na AEDA",es:"en Vivo en AEDA"},
+    "Proudly supporting":{nl:"Met trots steunen wij",pap:"Cu orgullo nos ta apoyá",es:"Con orgullo apoyamos a"},
+    "in San Nicolas — a local youth soccer club.":{nl:"in San Nicolas — een lokale jeugdvoetbalclub.",pap:"na San Nicolas — un club di futbòl pa hubentut lokal.",es:"en San Nicolas — un club de fútbol juvenil local."},
+    "8 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.":{nl:"8 grote speeldagen — en dit is pas de eerste ronde. Kom terug voor nieuwe data van de volgende rondes.",pap:"8 dia grandi di wega — i esaki ta apenas e promé ronda. Bolbe chèk pa fechanan nobo di e siguiente rondanan.",es:"8 grandes días de partidos — y esto es solo la primera ronda. Vuelve para ver nuevas fechas de las próximas rondas."},
+    "Get Limited Free Tickets →":{nl:"Haal Beperkte Gratis Tickets →",pap:"Pidi Tickets Gratis Limitá →",es:"Obtén Boletos Gratis Limitados →"},
+    "View Schedule":{nl:"Bekijk Wedstrijden",pap:"Mira Partidonan",es:"Ver Partidos"},
+    "100% Free Admission":{nl:"100% Gratis Toegang",pap:"Entrada 100% Gratis",es:"Entrada 100% Gratis"},
+    "Food & Beverage Inside":{nl:"Eten & Drinken Binnen",pap:"Cuminda & Bibida Paden",es:"Comida y Bebida Adentro"},
+    "Featured teams:":{nl:"Uitgelichte teams:",pap:"Equiponan destacá:",es:"Equipos destacados:"},
+    // ---- schedule ----
+    "The Schedule":{nl:"Het Programma",pap:"E Programa",es:"El Programa"},
+    "8 Game Days — First Round":{nl:"8 Speeldagen — Eerste Ronde",pap:"8 Dia di Wega — Promé Ronda",es:"8 Días de Partidos — Primera Ronda"},
+    "These are the first-round game days at the AEDA Building. Tap any poster to reserve your limited free tickets. Check back as we add new dates for the rounds ahead. All times shown are Aruba local time (AST).":{nl:"Dit zijn de speeldagen van de eerste ronde in het AEDA-gebouw. Tik op een poster om je beperkte gratis tickets te reserveren. Kom terug voor nieuwe data van de volgende rondes. Alle tijden zijn lokale tijd in Aruba (AST).",pap:"Esakinan ta e dianan di wega di promé ronda na e Edificio AEDA. Primi riba cualkier poster pa reservá bo tickets gratis limitá. Bolbe chèk pa fechanan nobo di e siguiente rondanan. Tur ora ta ora lokal di Aruba (AST).",es:"Estos son los días de partidos de la primera ronda en el Edificio AEDA. Toca cualquier póster para reservar tus boletos gratis limitados. Vuelve para ver nuevas fechas de las próximas rondas. Todas las horas son hora local de Aruba (AST)."},
+    "Double-Header":{nl:"Dubbele Wedstrijd",pap:"Dos Wega",es:"Doble Partido"},
+    "Match Day":{nl:"Wedstrijddag",pap:"Dia di Wega",es:"Día de Partido"},
+    "Triple-Header":{nl:"Drie Wedstrijden",pap:"Tres Wega",es:"Triple Partido"},
+    "Reserve Limited Free Tickets →":{nl:"Reserveer Beperkte Gratis Tickets →",pap:"Reservá Tickets Gratis Limitá →",es:"Reserva Boletos Gratis Limitados →"},
+    "Reserve Limited Free Tickets":{nl:"Reserveer Beperkte Gratis Tickets",pap:"Reservá Tickets Gratis Limitá",es:"Reserva Boletos Gratis Limitados"},
+    // day abbreviations (cards)
+    "FRI":{nl:"VR",pap:"BIÈ",es:"VIE"},"SAT":{nl:"ZA",pap:"SÀB",es:"SÁB"},"SUN":{nl:"ZO",pap:"DÒM",es:"DOM"},"THU":{nl:"DO",pap:"HUE",es:"JUE"},"WED":{nl:"WO",pap:"RAS",es:"MIÉ"},
+    // dates
+    "June 12, 2026":{nl:"12 juni 2026",pap:"12 di juni 2026",es:"12 de junio de 2026"},
+    "June 13, 2026":{nl:"13 juni 2026",pap:"13 di juni 2026",es:"13 de junio de 2026"},
+    "June 14, 2026":{nl:"14 juni 2026",pap:"14 di juni 2026",es:"14 de junio de 2026"},
+    "June 18, 2026":{nl:"18 juni 2026",pap:"18 di juni 2026",es:"18 de junio de 2026"},
+    "June 19, 2026":{nl:"19 juni 2026",pap:"19 di juni 2026",es:"19 de junio de 2026"},
+    "June 20, 2026":{nl:"20 juni 2026",pap:"20 di juni 2026",es:"20 de junio de 2026"},
+    "June 24, 2026":{nl:"24 juni 2026",pap:"24 di juni 2026",es:"24 de junio de 2026"},
+    "June 25, 2026":{nl:"25 juni 2026",pap:"25 di juni 2026",es:"25 de junio de 2026"},
+    // ---- calendar ----
+    "Game Day Calendar":{nl:"Speeldagenkalender",pap:"Calendario di Dia di Wega",es:"Calendario de Partidos"},
+    "June 2026":{nl:"Juni 2026",pap:"Juni 2026",es:"Junio 2026"},
+    "First-round game days at a glance. Tap a highlighted day to reserve your limited free tickets. More dates will be added here as the next rounds are confirmed.":{nl:"De speeldagen van de eerste ronde in één oogopslag. Tik op een gemarkeerde dag om je beperkte gratis tickets te reserveren. Meer data volgen zodra de volgende rondes bevestigd zijn.",pap:"E dianan di wega di promé ronda na un biaha. Primi riba un dia marcá pa reservá bo tickets gratis limitá. Mas fecha lo wòrdu agregá ora e siguiente rondanan ta confirmá.",es:"Los días de partidos de la primera ronda de un vistazo. Toca un día destacado para reservar tus boletos gratis limitados. Se agregarán más fechas cuando se confirmen las próximas rondas."},
+    "Sun":{nl:"Zo",pap:"Dòm",es:"Dom"},"Mon":{nl:"Ma",pap:"Lun",es:"Lun"},"Tue":{nl:"Di",pap:"Mar",es:"Mar"},"Wed":{nl:"Wo",pap:"Ras",es:"Mié"},"Thu":{nl:"Do",pap:"Hue",es:"Jue"},"Fri":{nl:"Vr",pap:"Biè",es:"Vie"},"Sat":{nl:"Za",pap:"Sàb",es:"Sáb"},
+    "1 game":{nl:"1 wedstrijd",pap:"1 wega",es:"1 partido"},"2 games":{nl:"2 wedstrijden",pap:"2 wega",es:"2 partidos"},"3 games":{nl:"3 wedstrijden",pap:"3 wega",es:"3 partidos"},
+    "Game day — tap to reserve your limited free tickets":{nl:"Speeldag — tik om je beperkte gratis tickets te reserveren",pap:"Dia di wega — primi pa reservá bo tickets gratis limitá",es:"Día de partido — toca para reservar tus boletos gratis limitados"},
+    // ---- venue ----
+    "The Venue":{nl:"De Locatie",pap:"E Lugá",es:"El Lugar"},
+    "The AEDA Building":{nl:"Het AEDA-Gebouw",pap:"E Edificio AEDA",es:"El Edificio AEDA"},
+    "Right in the heart of San Nicolas — Aruba's vibrant cultural capital. Big screens, great atmosphere, and the whole community coming together for every match.":{nl:"Midden in het hart van San Nicolas — de bruisende culturele hoofdstad van Aruba. Grote schermen, geweldige sfeer en de hele gemeenschap samen bij elke wedstrijd.",pap:"Net na e curason di San Nicolas — e capital cultural vibrante di Aruba. Pantaya grandi, ambiente excelente, i henter e comunidad huntu pa cada wega.",es:"En el corazón de San Nicolas — la vibrante capital cultural de Aruba. Pantallas grandes, gran ambiente y toda la comunidad reunida en cada partido."},
+    "AEDA Building":{nl:"AEDA-Gebouw",pap:"Edificio AEDA",es:"Edificio AEDA"},
+    "Space is limited":{nl:"Beperkte ruimte",pap:"Espacio ta limitá",es:"Espacio limitado"},
+    "Reserve your limited free tickets and plan to arrive early":{nl:"Reserveer je beperkte gratis tickets en kom op tijd",pap:"Reservá bo tickets gratis limitá i yega tempran",es:"Reserva tus boletos gratis limitados y llega temprano"},
+    "Food & beverage available inside":{nl:"Eten & drinken binnen verkrijgbaar",pap:"Cuminda & bibida disponibel paden",es:"Comida y bebida disponibles adentro"},
+    "Proudly made possible by our local F&B vendors — no outside food or drink, please":{nl:"Mede mogelijk gemaakt door onze lokale eet- en drinkverkopers — geen eigen eten of drinken, alstublieft",pap:"Posibel danki na nos bendedornan lokal di cuminda i bibida — pa fabor no trece cuminda ni bibida di pafó",es:"Posible gracias a nuestros vendedores locales de comida y bebida — por favor, no traer comida ni bebida de afuera"},
+    "Free admission, always":{nl:"Altijd gratis toegang",pap:"Semper entrada gratis",es:"Entrada gratis, siempre"},
+    "Reserve your spot on Eventbrite":{nl:"Reserveer je plek op Eventbrite",pap:"Reservá bo lugá riba Eventbrite",es:"Reserva tu lugar en Eventbrite"},
+    // ---- good to know ----
+    "Good to Know":{nl:"Goed om te Weten",pap:"Bon pa Sa",es:"Bueno Saber"},
+    "Before You Come":{nl:"Voordat Je Komt",pap:"Promé cu Bo Bin",es:"Antes de Venir"},
+    "Space Is Limited":{nl:"Beperkte Ruimte",pap:"Espacio ta Limitá",es:"El Espacio es Limitado"},
+    "Capacity inside the AEDA Building is limited. Reserve your limited free tickets in advance and plan to arrive early to make sure you get in.":{nl:"De capaciteit in het AEDA-gebouw is beperkt. Reserveer je beperkte gratis tickets vooraf en kom op tijd om binnen te komen.",pap:"E capacidad paden di e Edificio AEDA ta limitá. Reservá bo tickets gratis limitá di antemano i yega tempran pa asegurá cu bo ta drenta.",es:"La capacidad dentro del Edificio AEDA es limitada. Reserva tus boletos gratis limitados con anticipación y llega temprano para asegurar tu entrada."},
+    "No Outside Food or Beverage Allowed":{nl:"Geen Eigen Eten of Drinken Toegestaan",pap:"No ta Permití Cuminda ni Bibida di Pafó",es:"No se Permite Comida ni Bebida de Afuera"},
+    "These watch parties are proudly made possible by our local food & beverage vendors. Please support them inside the venue — no outside food or drink is allowed.":{nl:"Deze kijkfeesten worden mede mogelijk gemaakt door onze lokale eet- en drinkverkopers. Steun hen binnen — eigen eten of drinken is niet toegestaan.",pap:"E watch partynan aki ta posibel danki na nos bendedornan lokal di cuminda i bibida. Pa fabor apoyá nan paden — no ta permití cuminda ni bibida di pafó.",es:"Estas fiestas para ver los partidos son posibles gracias a nuestros vendedores locales de comida y bebida. Por favor, apóyalos adentro — no se permite comida ni bebida de afuera."},
+    // ---- food & drinks ----
+    "Inside the Venue":{nl:"Binnen de Locatie",pap:"Paden e Lugá",es:"Dentro del Lugar"},
+    "Food & Drinks":{nl:"Eten & Drinken",pap:"Cuminda & Bibida",es:"Comida y Bebida"},
+    "Hot food and cold drinks are served inside throughout every event. You can also":{nl:"Warm eten en koude drankjes worden de hele dag binnen geserveerd. Je kunt ook",pap:"Cuminda cayente i bibida friu ta wòrdu sirbí paden durante henter e evento. Bo por tambe",es:"Comida caliente y bebidas frías se sirven adentro durante todo el evento. También puedes"},
+    "pre-purchase food and beer on Eventbrite":{nl:"vooraf eten en bier kopen op Eventbrite",pap:"cumpra cuminda i serbes di antemano riba Eventbrite",es:"comprar comida y cerveza por adelantado en Eventbrite"},
+    "when you reserve your tickets — skip the line and get straight to the game.":{nl:"bij het reserveren van je tickets — sla de rij over en ga direct naar de wedstrijd.",pap:"ora bo reservá bo tickets — salta e cola i bai directo na e wega.",es:"al reservar tus boletos — evita la fila y ve directo al partido."},
+    "Food":{nl:"Eten",pap:"Cuminda",es:"Comida"},
+    "Drinks":{nl:"Drinken",pap:"Bibida",es:"Bebida"},
+    "Hot dogs":{nl:"Hotdogs",pap:"Hotdog",es:"Hot dogs"},
+    "Chicken":{nl:"Kip",pap:"Galiña",es:"Pollo"},
+    "Pizza":{nl:"Pizza",pap:"Pizza",es:"Pizza"},
+    "Beef":{nl:"Rundvlees",pap:"Carni",es:"Carne de res"},
+    "Rice & spaghetti":{nl:"Rijst & spaghetti",pap:"Aros & spaghetti",es:"Arroz y espagueti"},
+    "Salad":{nl:"Salade",pap:"Salada",es:"Ensalada"},
+    "Beer":{nl:"Bier",pap:"Serbes",es:"Cerveza"},
+    "Pop":{nl:"Frisdrank",pap:"Refresco",es:"Refresco"},
+    "Mixed drinks":{nl:"Mixdranken",pap:"Bibida mixto",es:"Tragos mixtos"},
+    "Juice":{nl:"Sap",pap:"Djus",es:"Jugo"},
+    "Slushies":{nl:"Slushies",pap:"Slush",es:"Granizados"},
+    "Water":{nl:"Water",pap:"Awa",es:"Agua"},
+    "Pre-purchase food & beer on Eventbrite when you register.":{nl:"Koop eten & bier vooraf op Eventbrite bij je aanmelding.",pap:"Cumpra cuminda & serbes di antemano riba Eventbrite ora bo registrá.",es:"Compra comida y cerveza por adelantado en Eventbrite al registrarte."},
+    // ---- cta band ----
+    "Don't Watch Alone — Watch at AEDA":{nl:"Kijk Niet Alleen — Kijk bij AEDA",pap:"No Mira Bo So — Mira na AEDA",es:"No Lo Veas Solo — Vélo en AEDA"},
+    "Limited free tickets go fast. Reserve yours now and bring the whole crew.":{nl:"Beperkte gratis tickets zijn snel weg. Reserveer nu en neem iedereen mee.",pap:"Tickets gratis limitá ta caba lihé. Reservá di bo awor i trece henter e grupo.",es:"Los boletos gratis limitados se agotan rápido. Reserva el tuyo ahora y trae a todos."},
+    "Get Your Limited Free Tickets →":{nl:"Haal Je Beperkte Gratis Tickets →",pap:"Pidi Bo Tickets Gratis Limitá →",es:"Obtén Tus Boletos Gratis Limitados →"},
+    // ---- footer ----
+    "World Cup 2026 Watch Parties · San Nicolas, Aruba":{nl:"WK 2026 Kijkfeesten · San Nicolas, Aruba",pap:"Mundial 2026 Watch Party · San Nicolas, Aruba",es:"Fiestas Copa Mundial 2026 · San Nicolas, Aruba"},
+    "Presented by the AEDA Foundation. Free admission · Food & beverage available inside, made possible by our local vendors (no outside food or drink).":{nl:"Gepresenteerd door de AEDA Foundation. Gratis toegang · Eten & drinken binnen verkrijgbaar, mede mogelijk gemaakt door onze lokale verkopers (geen eigen eten of drinken).",pap:"Presentá pa AEDA Foundation. Entrada gratis · Cuminda & bibida disponibel paden, posibel danki na nos bendedornan lokal (no cuminda ni bibida di pafó).",es:"Presentado por la AEDA Foundation. Entrada gratis · Comida y bebida disponibles adentro, posible gracias a nuestros vendedores locales (no comida ni bebida de afuera)."},
+    "Space is limited — reserve your limited free tickets and arrive early. Tickets distributed via Eventbrite. Match dates and times subject to change.":{nl:"De ruimte is beperkt — reserveer je beperkte gratis tickets en kom op tijd. Tickets via Eventbrite. Data en tijden onder voorbehoud.",pap:"Espacio ta limitá — reservá bo tickets gratis limitá i yega tempran. Tickets via Eventbrite. Fecha i ora por cambia.",es:"El espacio es limitado — reserva tus boletos gratis limitados y llega temprano. Boletos vía Eventbrite. Fechas y horarios sujetos a cambios."},
+    "Made possible by partners from Canada & the USA":{nl:"Mede mogelijk gemaakt door partners uit Canada & de VS",pap:"Posibel danki na partnernan di Canada & Merca",es:"Posible gracias a socios de Canadá y EE. UU."}
+  };
+
+  var nodes=[];
+  function collect(){
+    var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      var p=n.parentNode; if(!p) return NodeFilter.FILTER_REJECT;
+      var t=p.nodeName; if(t==='SCRIPT'||t==='STYLE'||t==='BUTTON') return NodeFilter.FILTER_REJECT;
+      return n.nodeValue && n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }});
+    var n; while(n=w.nextNode()){ nodes.push({node:n, orig:n.nodeValue}); }
+  }
+  function setLang(lang){
+    for(var i=0;i<nodes.length;i++){
+      var item=nodes[i], orig=item.orig, core=orig.trim();
+      if(lang==='en'){ item.node.nodeValue=orig; continue; }
+      var entry=D[core];
+      if(entry && entry[lang]){
+        var s=orig.indexOf(core);
+        item.node.nodeValue = orig.slice(0,s) + entry[lang] + orig.slice(s+core.length);
+      } else { item.node.nodeValue=orig; }
+    }
+    document.documentElement.lang = (lang==='pap'?'pap':lang);
+    var btns=document.querySelectorAll('.lang-btn');
+    for(var j=0;j<btns.length;j++){ btns[j].classList.toggle('on', btns[j].getAttribute('data-l')===lang); }
+    try{ localStorage.setItem('aeda_lang', lang); }catch(e){}
+  }
+  window.__setLang=setLang;
+  collect();
+  var saved='en'; try{ saved=localStorage.getItem('aeda_lang')||'en'; }catch(e){}
+  if(saved!=='en') setLang(saved);
+})();
+</script>
 </body>
 </html>
