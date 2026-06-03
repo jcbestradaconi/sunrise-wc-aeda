@@ -112,13 +112,13 @@
   .cal .dow-h{text-align:center;font-weight:800;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);padding-bottom:4px}
   .cal .cell{aspect-ratio:1/1;border-radius:12px;background:#f1f9fc;display:flex;align-items:flex-start;justify-content:flex-end;padding:8px;font-weight:700;color:var(--ocean);font-size:.95rem;border:1px solid rgba(10,37,64,.05)}
   .cal .cell.empty{background:transparent;border:none}
-  .cal a.game{aspect-ratio:1/1;border-radius:12px;padding:8px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(150deg,var(--turq),var(--coral));color:#fff;text-decoration:none;box-shadow:0 6px 16px rgba(255,107,53,.30);transition:transform .15s ease,box-shadow .15s ease}
+  .cal a.game{aspect-ratio:1/1;border-radius:12px;padding:7px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px;overflow:hidden;background:linear-gradient(150deg,var(--turq),var(--coral));color:#fff;text-decoration:none;box-shadow:0 6px 16px rgba(255,107,53,.30);transition:transform .15s ease,box-shadow .15s ease}
   .cal a.game:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(255,107,53,.48)}
-  .cal a.game .num{align-self:flex-end;font-family:'Anton';font-size:1.25rem;line-height:1}
-  .cal a.game .gtag{font-size:.58rem;font-weight:800;letter-spacing:.4px;text-transform:uppercase;background:rgba(255,255,255,.24);border-radius:20px;padding:2px 7px;align-self:flex-start}
+  .cal a.game .num{align-self:flex-end;font-family:'Anton';font-size:1.05rem;line-height:1}
+  .cal a.game .glist{font-size:.5rem;font-weight:800;line-height:1.5;letter-spacing:.2px;text-align:left;align-self:stretch;margin-top:auto}
   .cal-legend{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;color:var(--muted);font-weight:600;font-size:.92rem}
   .cal-legend .swatch{width:18px;height:18px;border-radius:5px;background:linear-gradient(150deg,var(--turq),var(--coral))}
-  @media(max-width:560px){.cal{gap:5px}.cal .cell{padding:5px;font-size:.78rem;border-radius:9px}.cal a.game{padding:5px;border-radius:9px}.cal a.game .num{font-size:1rem}.cal a.game .gtag{display:none}}
+  @media(max-width:560px){.cal{gap:5px}.cal .cell{padding:5px;font-size:.78rem;border-radius:9px}.cal a.game{padding:5px;border-radius:9px;justify-content:center}.cal a.game .num{font-size:1rem}.cal a.game .glist{display:none}}
 
   /* ===== VENUE ===== */
   #venue{background:var(--ocean);color:#fff}
@@ -175,7 +175,7 @@
     <span class="kicker">★ AEDA Foundation Presents ★</span>
     <h1>World Cup <span class="yellow">2026</span><br>Live at AEDA</h1>
     <p style="margin:14px auto 0;max-width:620px;font-size:1rem;font-weight:600;color:#eaf6fb">Proudly supporting <strong style="color:var(--gold)">Sportvereniging Atletico Axon Academy</strong> in San Nicolas — a local youth soccer club.</p>
-    <p class="sub">8 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.</p>
+    <p class="sub">6 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.</p>
     <p class="loc">San Nicolas · Aruba</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Get Limited Free Tickets →</a>
@@ -192,8 +192,6 @@
       <div class="team-flag"><img src="assets/flags/brazil.svg" alt="Brazil flag"><span>Brazil</span></div>
       <div class="team-flag"><img src="assets/flags/curacao.svg" alt="Curaçao flag"><span>Curaçao</span></div>
       <div class="team-flag"><img src="assets/flags/haiti.svg" alt="Haiti flag"><span>Haiti</span></div>
-      <div class="team-flag"><img src="assets/flags/canada.svg" alt="Canada flag"><span>Canada</span></div>
-      <div class="team-flag"><img src="assets/flags/usa.svg" alt="USA flag"><span>USA</span></div>
     </div>
   </div>
 </header>
@@ -203,27 +201,10 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">The Schedule</span>
-      <h2>8 Game Days — First Round</h2>
+      <h2>6 Game Days — First Round</h2>
       <p>These are the first-round game days at the AEDA Building. Tap any poster to reserve your limited free tickets. Check back as we add new dates for the rounds ahead. All times shown are Aruba local time (AST).</p>
     </div>
     <div class="grid">
-
-      <!-- JUN 12 -->
-      <article class="card">
-        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
-          <img src="assets/posters/jun12.png" alt="June 12 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
-        </a>
-        <div class="card-body">
-          <div class="date-row"><span class="dow">FRI</span><span class="full">June 12, 2026</span></div>
-          <span class="tag double">Double-Header</span>
-          <div class="matches">
-            <div class="match"><span class="vs-teams"><img src="assets/flags/canada.svg" alt="Canada"> Canada <span class="vs">vs</span> Bosnia <img src="assets/flags/bosnia.svg" alt="Bosnia"></span><span class="time">3:00 PM</span></div>
-            <div class="match"><span class="vs-teams"><img src="assets/flags/usa.svg" alt="USA"> USA <span class="vs">vs</span> Paraguay <img src="assets/flags/paraguay.svg" alt="Paraguay"></span><span class="time">9:00 PM</span></div>
-          </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
-        </div>
-      </article>
 
       <!-- JUN 13 -->
       <article class="card">
@@ -259,22 +240,6 @@
         </div>
       </article>
 
-      <!-- JUN 18 -->
-      <article class="card">
-        <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
-          <img src="assets/posters/jun18.png" alt="June 18 World Cup watch party poster">
-          <div class="poster-overlay"><span>Reserve Limited Free Tickets →</span></div>
-        </a>
-        <div class="card-body">
-          <div class="date-row"><span class="dow">THU</span><span class="full">June 18, 2026</span></div>
-          <span class="tag single">Match Day</span>
-          <div class="matches">
-            <div class="match"><span class="vs-teams"><img src="assets/flags/canada.svg" alt="Canada"> Canada <span class="vs">vs</span> Qatar <img src="assets/flags/qatar.svg" alt="Qatar"></span><span class="time">6:00 PM</span></div>
-          </div>
-          <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
-        </div>
-      </article>
-
       <!-- JUN 19 -->
       <article class="card">
         <a class="poster-link" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">
@@ -283,9 +248,8 @@
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">FRI</span><span class="full">June 19, 2026</span></div>
-          <span class="tag double">Double-Header</span>
+          <span class="tag single">Match Day</span>
           <div class="matches">
-            <div class="match"><span class="vs-teams"><img src="assets/flags/usa.svg" alt="USA"> USA <span class="vs">vs</span> Australia <img src="assets/flags/australia.svg" alt="Australia"></span><span class="time">3:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Haiti <img src="assets/flags/haiti.svg" alt="Haiti"></span><span class="time">9:00 PM</span></div>
           </div>
           <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
@@ -317,9 +281,8 @@
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">WED</span><span class="full">June 24, 2026</span></div>
-          <span class="tag double">Triple-Header</span>
+          <span class="tag double">Double-Header</span>
           <div class="matches">
-            <div class="match"><span class="vs-teams"><img src="assets/flags/canada.svg" alt="Canada"> Canada <span class="vs">vs</span> Switzerland <img src="assets/flags/switzerland.svg" alt="Switzerland"></span><span class="time">3:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/brazil.svg" alt="Brazil"> Brazil <span class="vs">vs</span> Scotland <img src="assets/flags/scotland.svg" alt="Scotland"></span><span class="time">6:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/haiti.svg" alt="Haiti"> Haiti <span class="vs">vs</span> Morocco <img src="assets/flags/morocco.svg" alt="Morocco"></span><span class="time">6:00 PM</span></div>
           </div>
@@ -335,11 +298,10 @@
         </a>
         <div class="card-body">
           <div class="date-row"><span class="dow">THU</span><span class="full">June 25, 2026</span></div>
-          <span class="tag double">Triple-Header</span>
+          <span class="tag double">Double-Header</span>
           <div class="matches">
             <div class="match"><span class="vs-teams"><img src="assets/flags/curacao.svg" alt="Curaçao"> Curaçao <span class="vs">vs</span> Ivory Coast <img src="assets/flags/ivory-coast.svg" alt="Ivory Coast"></span><span class="time">4:00 PM</span></div>
             <div class="match"><span class="vs-teams"><img src="assets/flags/netherlands.svg" alt="Netherlands"> Netherlands <span class="vs">vs</span> Tunisia <img src="assets/flags/tunisia.svg" alt="Tunisia"></span><span class="time">7:00 PM</span></div>
-            <div class="match"><span class="vs-teams"><img src="assets/flags/usa.svg" alt="USA"> USA <span class="vs">vs</span> Turkey <img src="assets/flags/turkey.svg" alt="Turkey"></span><span class="time">10:00 PM</span></div>
           </div>
           <a class="btn btn-primary" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener">Reserve Limited Free Tickets</a>
         </div>
@@ -362,17 +324,15 @@
         <div class="dow-h">Sun</div><div class="dow-h">Mon</div><div class="dow-h">Tue</div><div class="dow-h">Wed</div><div class="dow-h">Thu</div><div class="dow-h">Fri</div><div class="dow-h">Sat</div>
         <div class="cell empty"></div>
         <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div><div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
-        <div class="cell">7</div><div class="cell">8</div><div class="cell">9</div><div class="cell">10</div><div class="cell">11</div>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Fri, Jun 12 — Canada vs Bosnia 3PM · USA vs Paraguay 9PM"><span class="num">12</span><span class="gtag">2 games</span></a>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 13 — Brazil vs Morocco 6PM · Haiti vs Scotland 9PM"><span class="num">13</span><span class="gtag">2 games</span></a>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sun, Jun 14 — Curaçao vs Germany 1PM · Netherlands vs Japan 3PM"><span class="num">14</span><span class="gtag">2 games</span></a>
-        <div class="cell">15</div><div class="cell">16</div><div class="cell">17</div>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Thu, Jun 18 — Canada vs Qatar 6PM"><span class="num">18</span><span class="gtag">1 game</span></a>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Fri, Jun 19 — USA vs Australia 3PM · Brazil vs Haiti 9PM"><span class="num">19</span><span class="gtag">2 games</span></a>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 20 — Netherlands vs Sweden 2PM · Curaçao vs Ecuador 8PM"><span class="num">20</span><span class="gtag">2 games</span></a>
+        <div class="cell">7</div><div class="cell">8</div><div class="cell">9</div><div class="cell">10</div><div class="cell">11</div><div class="cell">12</div>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 13 — Brazil vs Morocco 6PM · Haiti vs Scotland 9PM"><span class="num">13</span><span class="glist">BRA–MAR 6p<br>HAI–SCO 9p</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sun, Jun 14 — Curaçao vs Germany 1PM · Netherlands vs Japan 3PM"><span class="num">14</span><span class="glist">CUR–GER 1p<br>NED–JPN 3p</span></a>
+        <div class="cell">15</div><div class="cell">16</div><div class="cell">17</div><div class="cell">18</div>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Fri, Jun 19 — Brazil vs Haiti 9PM"><span class="num">19</span><span class="glist">BRA–HAI 9p</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Sat, Jun 20 — Netherlands vs Sweden 2PM · Curaçao vs Ecuador 8PM"><span class="num">20</span><span class="glist">NED–SWE 2p<br>CUR–ECU 8p</span></a>
         <div class="cell">21</div><div class="cell">22</div><div class="cell">23</div>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Wed, Jun 24 — Canada vs Switzerland 3PM · Brazil vs Scotland 6PM · Haiti vs Morocco 6PM"><span class="num">24</span><span class="gtag">3 games</span></a>
-        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Thu, Jun 25 — Curaçao vs Ivory Coast 4PM · Netherlands vs Tunisia 7PM · USA vs Turkey 10PM"><span class="num">25</span><span class="gtag">3 games</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Wed, Jun 24 — Brazil vs Scotland 6PM · Haiti vs Morocco 6PM"><span class="num">24</span><span class="glist">BRA–SCO 6p<br>HAI–MAR 6p</span></a>
+        <a class="game" href="https://www.eventbrite.ca/e/world-cup-live-event-tickets-1990520937708?aff=oddtdtcreator" target="_blank" rel="noopener" title="Thu, Jun 25 — Curaçao vs Ivory Coast 4PM · Netherlands vs Tunisia 7PM"><span class="num">25</span><span class="glist">CUR–CIV 4p<br>NED–TUN 7p</span></a>
         <div class="cell">26</div><div class="cell">27</div>
         <div class="cell">28</div><div class="cell">29</div><div class="cell">30</div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
       </div>
@@ -504,7 +464,7 @@
     "Live at AEDA":{nl:"Live bij AEDA",pap:"Live na AEDA",es:"en Vivo en AEDA"},
     "Proudly supporting":{nl:"Met trots steunen wij",pap:"Cu orgullo nos ta apoyá",es:"Con orgullo apoyamos a"},
     "in San Nicolas — a local youth soccer club.":{nl:"in San Nicolas — een lokale jeugdvoetbalclub.",pap:"na San Nicolas — un club di futbòl pa hubentut lokal.",es:"en San Nicolas — un club de fútbol juvenil local."},
-    "8 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.":{nl:"8 grote speeldagen — en dit is pas de eerste ronde. Kom terug voor nieuwe data van de volgende rondes.",pap:"8 dia grandi di wega — i esaki ta apenas e promé ronda. Bolbe chèk pa fechanan nobo di e siguiente rondanan.",es:"8 grandes días de partidos — y esto es solo la primera ronda. Vuelve para ver nuevas fechas de las próximas rondas."},
+    "6 big game days — and this is just the first round. Check back as we add new dates for the rounds ahead.":{nl:"6 grote speeldagen — en dit is pas de eerste ronde. Kom terug voor nieuwe data van de volgende rondes.",pap:"6 dia grandi di wega — i esaki ta apenas e promé ronda. Bolbe chèk pa fechanan nobo di e siguiente rondanan.",es:"6 grandes días de partidos — y esto es solo la primera ronda. Vuelve para ver nuevas fechas de las próximas rondas."},
     "Get Limited Free Tickets →":{nl:"Haal Beperkte Gratis Tickets →",pap:"Pidi Tickets Gratis Limitá →",es:"Obtén Boletos Gratis Limitados →"},
     "View Schedule":{nl:"Bekijk Wedstrijden",pap:"Mira Partidonan",es:"Ver Partidos"},
     "100% Free Admission":{nl:"100% Gratis Toegang",pap:"Entrada 100% Gratis",es:"Entrada 100% Gratis"},
@@ -512,7 +472,7 @@
     "Featured teams:":{nl:"Uitgelichte teams:",pap:"Equiponan destacá:",es:"Equipos destacados:"},
     // ---- schedule ----
     "The Schedule":{nl:"Het Programma",pap:"E Programa",es:"El Programa"},
-    "8 Game Days — First Round":{nl:"8 Speeldagen — Eerste Ronde",pap:"8 Dia di Wega — Promé Ronda",es:"8 Días de Partidos — Primera Ronda"},
+    "6 Game Days — First Round":{nl:"6 Speeldagen — Eerste Ronde",pap:"6 Dia di Wega — Promé Ronda",es:"6 Días de Partidos — Primera Ronda"},
     "These are the first-round game days at the AEDA Building. Tap any poster to reserve your limited free tickets. Check back as we add new dates for the rounds ahead. All times shown are Aruba local time (AST).":{nl:"Dit zijn de speeldagen van de eerste ronde in het AEDA-gebouw. Tik op een poster om je beperkte gratis tickets te reserveren. Kom terug voor nieuwe data van de volgende rondes. Alle tijden zijn lokale tijd in Aruba (AST).",pap:"Esakinan ta e dianan di wega di promé ronda na e Edificio AEDA. Primi riba cualkier poster pa reservá bo tickets gratis limitá. Bolbe chèk pa fechanan nobo di e siguiente rondanan. Tur ora ta ora lokal di Aruba (AST).",es:"Estos son los días de partidos de la primera ronda en el Edificio AEDA. Toca cualquier póster para reservar tus boletos gratis limitados. Vuelve para ver nuevas fechas de las próximas rondas. Todas las horas son hora local de Aruba (AST)."},
     "Double-Header":{nl:"Dubbele Wedstrijd",pap:"Dos Wega",es:"Doble Partido"},
     "Match Day":{nl:"Wedstrijddag",pap:"Dia di Wega",es:"Día de Partido"},
